@@ -1,0 +1,352 @@
+body{
+    margin:0;
+    padding:0;
+    min-height:4000px;
+}
+
+.topbar{
+    position:fixed;
+    background:none;
+    height:60px;
+    z-index:800;
+    width:100%;
+    transition:0.5s;
+}
+
+.logo1{
+    height:70%;
+    z-index:500;
+    top:15%;
+    position:absolute;
+    left:110px;
+    fill:purple;
+    cursor:pointer;
+}
+
+.logobleu{
+    height:92%;
+    z-index:500;
+    top:5%;
+    position:absolute;
+    left:107px;
+    fill:purple;
+    display:none;
+    cursor:pointer;
+}
+
+.conttopbar{
+    height:80%;
+    position:absolute;
+    top:10%;
+    background-color:white;
+    right:110px;
+    border-radius:4px;
+}
+
+.buttontopbar{
+    background-color:#29a3a3;
+    border-radius:4px;
+    border:none;
+    margin-left:5px;
+    margin-top:5px;
+    height:38px;
+    margin-right:5px;
+    color:white;
+    padding-left:15px;
+    padding-right:15px;
+    cursor:pointer;
+}
+
+.buttontopbar:hover{
+    background-color:#2886a2;
+}
+
+.entete{
+    width:100%;
+    height:550px;
+    background-color:#29a3a3;
+}
+
+.part1{
+    width:50%;
+    height:100%;
+    float:right;
+    background-color:#29a3a3;
+    position:relative;
+    max-width:580px;
+    padding-left:20px;
+    padding-right:60px;
+}
+
+.part1::before{
+    content:"";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 550px 100px 0 0;
+    border-color: #29a3a3 transparent transparent transparent;
+    position:absolute;
+    right:0;
+    margin-right:-100px;
+    z-index:50;
+}
+
+.titlepart1{
+    color:white;
+    padding-top:175px;
+    font-weight:bold;
+    font-size:34px;
+}
+
+.txtpart1{
+    color:white;
+    margin-top:20px;
+}
+
+.searchbarheader{
+    width:80%;
+    font-size:12px;
+    resize:none;
+    overflow:hidden;
+    height:37px;
+    padding-top:0px;
+    padding-left:15px;
+    margin-top:20px;
+    border:none;
+    border-top-left-radius:2px;
+    border-bottom-left-radius:2px;
+    float:left;
+    font-family:Arial;
+    letter-spacing:0.8px;
+}
+
+.searchbuttonheader{
+    height:37px;
+    margin:0;
+    background-color:#62376C;
+    display:inline-block;
+    border:none;
+    margin-top:20px;
+    width:36px;
+    border-top-right-radius:2px;
+    border-bottom-right-radius:2px;
+    cursor:pointer;
+}
+
+.searchbuttonheader:hover{
+    background-color:#523559;
+}
+
+.searchicone{
+    width:10px;
+    height:10px;
+    margin-top:-5px;
+}
+
+.errormsg{
+    width:auto;
+    background-color:yellow;
+    margin-top:20px;
+    padding-left:15px;
+    padding-top:10px;
+    padding-bottom:10px;
+    font-size:13px;
+    border-radius:4px;
+    padding-right:15px;
+    transition:0.5s;
+    display:none;
+    width:175px;
+}
+
+
+.part2{
+    width:50%;
+    float:right;
+    height:100%;
+    background-image:url(imagespage2/chinois.jpg);
+    background-position:50% 50%;
+    position:relative;
+    
+}
+
+.groslogo{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+}
+
+.contglob{
+    width:100%;
+    height:100%;
+    position:relative;
+    right:0;
+    background-color:#29a3a3;
+    float:right;
+}
+
+#triangle-box {
+    width:100%;
+    position: relative;
+    height:50px;
+    z-index:200;
+    top:150px;
+  }
+  
+  #triangle {
+    /* THIS IS THE MAGIC: using the directional keywords instead
+       of an angle in the linear gradient property*/
+    background-image: linear-gradient(to left top, #29a3a3 0%, #29a3a3 50%, transparent 50%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    z-index:200;
+    display:none;
+  }
+
+.topbartelephone{
+    position:fixed;
+    background:white;
+    height:50px;
+    z-index:800;
+    width:100%;
+    transition:0.5s;
+    top:0;
+    left:0;
+    display:none;
+}
+
+.titletel{
+    font-size:23px;
+    font-weight:bold;
+    font-family:arial;
+    line-height:50px;
+    margin-left:50%;
+    transform:translate(-50%);
+    display:inline-block;
+}
+
+@media(max-width:1000px){
+    .titlepart1{
+        font-size:25px;
+    }
+}
+
+@media(max-width:768px){
+    .contglob{
+        margin-top:50px;
+        padding-left:none;
+        padding-left:0;
+    }
+    .topbar{
+        display:none;
+    }
+
+    .conttopbar{
+        display:none;
+    }
+    .logo1{
+        height:0;
+    }
+    .part2{
+        width:100%;
+        display:block;
+        height:200px;
+        margin:0;
+    }
+    .groslogo{
+        width:60px;
+    }
+    .part1{
+        width:100%;
+        height:auto;
+        display:block;
+        max-width:none;
+        padding-top:none;
+        padding-bottom:20px;
+    }
+    .part1::before{
+        content:"";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 550px 100px 0 0;
+        border-color: #29a3a3 transparent transparent transparent;
+        position:absolute;
+        right:top;
+        margin-top:-100px;
+        z-index:50;
+    }
+    .topbartelephone{
+        display:block;
+        position:fixed;
+        top:0;
+    }
+    .titlepart1{
+        padding-top:20px;
+    }
+    .searchbarheader{
+        width:93%;
+    }
+    .txtpart1{
+        display:none;
+    }
+    #triangle{
+        display:block;
+    }
+    .entete{
+        height:auto;
+    }
+
+    .part1::before{
+        display:none;
+    }
+}
+
+@media(max-width:611px){
+    .searchbarheader{
+        width:70%;
+    }
+    .part1{
+        padding-right:20px;
+    }
+}
+
+/*fin de header*/
+
+/* debut de ldcf*/
+
+.contldcf{
+    display:block;
+    width:100%;
+    background-image:url(imagespage2/couverts.svg);
+    background-size:auto 100%;
+    background-repeat:no-repeat;
+    background-position-x: 80%;
+    font-family:Arial;
+    padding-left:100px;
+    padding-right:40%;
+    padding-bottom:30px;
+}
+
+.return{
+    font-size:15px;
+    padding-top:20px;
+}
+
+.titleldcf{
+    font-weight:bold;
+}
+
+@media(max-width:768px){
+    .contldcf{
+        padding-right:10%;
+    }
+    .contglob{
+        margin-bottom:20px;
+    }
+}
+
+/* fin de ldcf*/
